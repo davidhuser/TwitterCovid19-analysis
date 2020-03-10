@@ -1,4 +1,3 @@
-import community
 import networkx as nx
 import pandas as pd
 
@@ -63,29 +62,6 @@ def relabel_graph(g, nodes_df):
     # relabel nodes and return graph
     return nx.relabel_nodes(g, {key: column['Label'] for key, column in
                                 nodes_df.set_index('Id').to_dict(orient="index").items()})
-
-
-def get_communities(g):
-    """
-    Creates communities for a given graph
-
-    :param g: the graph to analyse communities in
-    :return: dict of nodes with corresponding community, list of communities with all their nodes
-    """
-
-    # create dict of each node (key) with its community (value)
-    partitions = community.best_partition(g.to_undirected())
-
-    # dict of communities with empty lists
-    communities = {k: [] for k in partitions.values()}
-
-    # fill all nodes to the corresponding community
-    for key, value in partitions.items():
-        communities[value].append(key)
-
-    # return dict of nodes and dict of communities
-    return partitions, communities
-
 
 def get_conn():
     """
