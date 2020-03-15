@@ -1,8 +1,5 @@
-#TwitterCovid19-analysis
+# TwitterCovid19-analysis
 
-Check the course Getting started for Jupyter notebooks:
+Project to analyze Twitter during the onset of the COVID-19 outbreak in the Netherlands.
 
-https://canvas.vu.nl/courses/46398/pages/hands-on-session-1-setup-and-getting-started?module_item_id=318541
-
-Similar project:
-https://github.com/ugis22/analysing_twitter
+This is the analysis repository. To check out the server component which needs to be set up in order to use the analysis in these notebooks, visit [BenediktAllendorf/TwitterCovid19](https://github.com/BenediktAllendorf/TwitterCovid19).
