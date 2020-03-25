@@ -4,10 +4,10 @@ import pandas as pd
 import psycopg2
 
 # credentials for postgresql database
-DB_HOST = '89.145.163.87'
+DB_HOST = 'localhost'
 DB_PORT = 5432
 DB_USERNAME = 'group11'
-DB_PASSWORD = 'tsw2020'
+DB_PASSWORD = 'xxxxxx'
 DB_NAME = 'tweets'
 
 CONCEPTS_STOPWORDS = ['coronavirus', 'Coronavirus', 'Corona', 'CoronaVirus', 'do', 'amp', 'Deutschland', 'via', 'tun',
